@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import DropdownMenu from "./DropdownMenu";
 function Navbar() {
     return <nav className="navbar">
         <div className="navbar-container">
@@ -7,7 +7,7 @@ function Navbar() {
             <div className="navigation-links">
                 <Link to="/" className="navbar-btn">Home</Link>
                 <Link to="/about" className="navbar-btn">About</Link>
-                <Link to="/application" className="navbar-btn">Application</Link>
+                <DropdownMenu title="Applications"/>
             </div>
         </div>
     </nav>
